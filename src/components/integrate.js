@@ -92,7 +92,7 @@ class Integrate extends React.Component {
               {"'>\n"}
               {"</div>\n"}
               {"<script async\n"}
-              {"  src='https://pol.is/embed.js'>\n"}
+              {"  src='https://poll2.care.or.th/embed.js'>\n"}
               {"</script>"}
             </Highlight>
           </div>
