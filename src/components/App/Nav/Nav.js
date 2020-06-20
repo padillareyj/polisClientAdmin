@@ -28,9 +28,11 @@ class Nav extends React.Component {
           <a href="/signin" className="link mr4 white">
             {t.signin}
           </a>
-          <a href="/demo" ref={button => (this.button = button)} className="br2 ba ph2 pv2  ttu white   w-100 w-auto-ns   mt3 mt0-ns link">
-            {t.cta}
+         &nbsp;
+           <a href="/createuser" className="link mr4 white">
+            Sign Up
           </a>
+         
         </div>
       </nav>;
   }

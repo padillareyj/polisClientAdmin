@@ -1,7 +1,7 @@
 export default {
   footer: {
     copyright: "The Authors. All Rights Reserved.",
-    social: ["https://github.com/pol-is/", "https://twitter.com/usepolis"],
+    social: ["https://poll2.care.or.th/", "https://poll2.care.or.th/"],
     groups: [
       {
         heading: "Company",
@@ -12,7 +12,7 @@ export default {
           },
           {
             title: "Blog",
-            url: "https://blog.pol.is/"
+            url: "https://poll2.care.or.th/"
           }
         ]
       },
@@ -30,11 +30,11 @@ export default {
         links: [
           {
             title: "Terms",
-            url: "https://pol.is/tos"
+            url: "https://poll2.care.or.th/"
           },
           {
             title: "Privacy",
-            url: "https://pol.is/privacy"
+            url: "https://poll2.care.or.th/"
           }
         ]
       }

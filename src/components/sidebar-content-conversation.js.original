@@ -39,13 +39,13 @@ class SidebarContentConversation extends React.Component {
             showIcon={true}
             icon="chevron-left"
             enabled={true}
-            text="บทสนทนาทั้งหมด"/>
+            text="All Conversations"/>
           <SidebarItem
             to={"/m/"+this.props.conversation_id}
             selected={this.props.routes[2] && !this.props.routes[2].path}
             icon="gears"
             enabled={true}
-            text="จัดการบทสนทนา"/>
+            text="Configure"/>
           {/*<SidebarItem
             to={"/m/"+this.props.conversation_id+"/live"}
             selected={this.props.routes[2] && this.props.routes[2].path === "live"}
@@ -57,27 +57,27 @@ class SidebarContentConversation extends React.Component {
             selected={this.props.routes[2] && this.props.routes[2].path === "share"}
             icon="code"
             enabled={true}
-            text="แชร์"/>
+            text="Distribute"/>
             <SidebarItem
               to={"/m/"+this.props.conversation_id+"/comments"}
               selected={this.props.routes[2] && this.props.routes[2].path === "comments" || this.props.routes[2] && this.props.routes[2].path === "participants"}
               icon="comments"
               enabled={true}
-              text="จัดการคอมเม้นท์"/>
+              text="Moderate"/>
           <SidebarItem
             small
             to={"/m/"+this.props.conversation_id+"/comments"}
             selected={this.props.routes[2] && this.props.routes[2].path === "comments"}
             icon="comments"
             enabled={true}
-            text="คอมเม้นท์"/>
+            text="Comments"/>
           <SidebarItem
             small
             to={"/m/"+this.props.conversation_id+"/participants"}
             selected={this.props.routes[2] && this.props.routes[2].path === "participants"}
             icon="users"
             enabled={true}
-            text="ผู้เข้าร่วม"/>
+            text="Participants"/>
           {/*<SidebarItem
             to={"/m/"+this.props.conversation_id+"/summary"}
             selected={this.props.routes[2] && this.props.routes[2].path === "summary"}
@@ -88,13 +88,13 @@ class SidebarContentConversation extends React.Component {
             selected={this.props.routes[2] && this.props.routes[2].path === "stats"}
             icon="area-chart"
             enabled={canViewStats}
-            text={"สถิติ" + (canViewStats ? "" : lockedIcon)}/>
+            text={"Monitor" + (canViewStats ? "" : lockedIcon)}/>
           <SidebarItem
             to={canEditReports ? "/m/"+this.props.conversation_id+"/reports" : Features.plansRoute}
             selected={this.props.routes[2] && this.props.routes[2].path === "reports"}
             icon="file-text-o"
             enabled={canEditReports}
-            text={"รายงาน" + (canEditReports ? "" : lockedIcon)}/>
+            text={"Report" + (canEditReports ? "" : lockedIcon)}/>
           <SidebarItem
             to={canExportData ? "/m/"+this.props.conversation_id+"/export" : Features.plansRoute}
             selected={this.props.routes[2] && this.props.routes[2].path === "export"}
@@ -107,7 +107,7 @@ class SidebarContentConversation extends React.Component {
           <Link
             style={s.sidebarLink}
             to={"/signout"}>
-            <span style={{marginRight: 10}}>ออกจากระบบ</span>
+            <span style={{marginRight: 10}}>Sign Out</span>
             <Awesome name="sign-out"/>
           </Link>
         </div>

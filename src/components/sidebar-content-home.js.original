@@ -43,7 +43,7 @@ class SidebarContentHome extends React.Component {
           <span
             style={s.sidebarLink}
             onClick={this.onNewClicked.bind(this)}>
-            <span>สร้างบทสนทนาใหม่</span>
+            <span>New</span>
           </span>
           <SidebarItem
             to="/integrate"
@@ -54,21 +54,21 @@ class SidebarContentHome extends React.Component {
             to="/"
             selected={this.props.routes[1] && !this.props.routes[1].path}
             icon="inbox"
-            text="บทสนทนาของฉัน"/>
+            text="My Conversations"/>
           <SidebarItem
             to="/other-conversations"
             selected={this.props.routes[1] && this.props.routes[1].path === "other-conversations"}
             icon="user"
-            text="บทสนทนาผู้อื่น"/>
+            text="Other Conversations"/>
           <SidebarItem
             to="/account"
             selected={this.props.routes[1] && this.props.routes[1].path === "account"}
             icon="credit-card"
-            text="บัญชี"/>
+            text="Account"/>
           <Link
             style={s.sidebarLink}
             to={"/signout"}>
-            <span style={{marginRight: 10}}>ออกจากระบบ</span><Awesome name="sign-out"/>
+            <span style={{marginRight: 10}}>Sign Out</span><Awesome name="sign-out"/>
           </Link>
         </div>
       </MaterialTitlePanel>

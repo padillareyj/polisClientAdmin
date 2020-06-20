@@ -107,21 +107,9 @@ class Account extends React.Component {
           <p>{this.props.user.hasTwitter ? "Twitter is connected" : ""}</p>
         </div>
         <div style={s.accountSection}>
-          <p style={s.accountSectionHeader}>Billing Overview</p>
-          <p>
-            Plan: {getPlanName(this.props.user)}
-            <Link style={{
-                marginLeft: 20,
-                fontSize: 12,
-                textTransform: "uppercase",
-                fontWeight: 500,
-                textDecoration: "none",
-                color: s.brandColor,
-              }} to="pricing">
-              plans & pricing
-            </Link>
-          </p>
-          { this.props.user.planCode === 0 ? <StripeForm onToken={onToken}/> : null }
+         
+          
+         
 
 
         </div>

@@ -132,6 +132,24 @@ class SignIn extends React.Component {
         </p>
 
         </form>
+	<div className="bt b--light-gray pt3">
+          <Button
+            style={styles.facebookButton}
+            onClick={this.facebookButtonClicked.bind(this)}>
+              <SocialIcon
+                key="icon-facebook"
+                network="facebook"
+                color="white"
+                className="mr3"
+              />
+            <span>{"Sign in with Facebook"}</span>
+          </Button>
+          <p className="mt4 mb3 lh-copy">
+           {
+		"If you click 'Sign in with Facebook' and are not a pol.is user, you will be registered and you agree to the pol.is terms and privacy policy"
+            }
+          </p>
+        </div>
       </div>
     )
   }

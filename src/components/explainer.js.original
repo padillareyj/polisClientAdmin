@@ -51,11 +51,11 @@ class Explainer extends React.Component {
   render() {
     return (
       <div style={s.container}>
-        <p style={{fontSize: 36, textAlign: "center"}}></p>
+        <p style={{fontSize: 36, textAlign: "center"}}>pol.is in 1 minute</p>
         <div style={s.section}>
           <p style={s.heading}>What you do</p>
           <p style={s.body}>
-          This is a new kind of survey that participants create as they go. Your job is to create and invite people to conversations. Pol.is automatically finds patterns and produces insights, then delivers a report that you can share with your community.
+            pol.is is a new kind of survey that participants create as they go. Your job is to create and invite people to conversations. Pol.is automatically finds patterns and produces insights, then delivers a report that you can share with your community.
           </p>
         </div>
         <div style={s.section}>
@@ -67,7 +67,7 @@ class Explainer extends React.Component {
         <div style={s.section}>
           <p style={s.heading}>2: Customize</p>
           <p style={s.body}>
-            It has a bunch of settings you can use to customize your conversations. Is participation anonymous? Will you moderate comments? Can everyone see how others voted? Choose the options that work best for your conversation, and message us if you need help!
+            Pol.is has a bunch of settings you can use to customize your conversations. Is participation anonymous? Will you moderate comments? Can everyone see how others voted? Choose the options that work best for your conversation, and message us if you need help!
           </p>
         </div>
         <div style={s.section}>
@@ -79,7 +79,7 @@ class Explainer extends React.Component {
         <div style={s.section}>
           <p style={s.heading}>4: Share</p>
           <p style={s.body}>
-            Finally, share a link to your conversation to invite participants. You can leave the conversation or embed it as a widget on your website. Invite lots of people! The results start getting really interesting after about 30 people have voted on 30 comments each.
+            Finally, share a link to your conversation to invite participants. You can leave the conversation on Pol.is or embed it as a widget on your website. Invite lots of people! The results start getting really interesting after about 30 people have voted on 30 comments each.
           </p>
         </div>
     </div>

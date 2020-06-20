@@ -238,7 +238,7 @@ class App extends React.Component {
   renderSpinner() {
     return (
       <Flex styleOverrides={{height: "100%"}}>
-        {"Loading pol.is..."}
+        {"Loading..."}
       </Flex>
     )
     // return (

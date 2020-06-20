@@ -20,7 +20,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-const serviceUrl = polisConfig.SERVICE_URL ? polisConfig.SERVICE_URL : "https://pol.is";
+const serviceUrl = polisConfig.SERVICE_URL ? polisConfig.SERVICE_URL : "http://203.159.71.64:5000";
 console.log("SERVICE_URL:", serviceUrl);
 
 function proxy (req, res) {
@@ -48,10 +48,11 @@ app.post(/^\/api\//, proxy);
 
 app.get(/^\/embed\/?$/, function(req, res) {
   res.sendFile(path.join(__dirname, 'embed.html'));
+  console.log(2);
 });
 
 app.get('*', function(req, res) {
-
+  console.log(1);
   var html = fs.readFileSync(path.join(__dirname, 'index.html'), {encoding: "utf8"});
 
   html = html.replace("<%= fbAppId %>", polisConfig.FB_APP_ID);
